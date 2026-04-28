@@ -8,30 +8,6 @@
 		"enabled": true
 	},
 	{
-		"expression": "/*Limit R:2160p*/ count(streamExpressionScore(resolution(streams, '2160p'), 0)) > 4 ? streamExpressionScore(resolution(streams, '2160p'), -100000, -1) : []",
-		"enabled": true
-	},
-	{
-		"expression": "/*Limit R:1440p*/ count(streamExpressionScore(resolution(streams, '1440p'), 0)) > 4 ? streamExpressionScore(resolution(streams, '1440p'), -100000, -1) : []",
-		"enabled": true
-	},
-	{
-		"expression": "/*Limit R:1080p*/ count(streamExpressionScore(resolution(streams, '1080p'), 0)) > 8 ? streamExpressionScore(resolution(streams, '1080p'), -100000, -1) : []",
-		"enabled": true
-	},
-	{
-		"expression": "/*Limit R:720p*/ count(streamExpressionScore(resolution(streams, '720p'), 0)) > 6 ? streamExpressionScore(resolution(streams, '720p'), -100000, -1) : []",
-		"enabled": true
-	},
-	{
-		"expression": "/*Limit R:576p*/ count(streamExpressionScore(resolution(streams, '576p'), 0)) > 4 ? streamExpressionScore(resolution(streams, '576p'), -100000, -1) : []",
-		"enabled": true
-	},
-	{
-		"expression": "/*Limit R:480p*/ count(streamExpressionScore(resolution(streams, '480'), 0)) > 4 ? streamExpressionScore(resolution(streams, '480p'), -100000, -1) : []",
-		"enabled": true
-	},
-	{
 		"expression": "/*Limit R:2160p Q:Remux*/ count(quality(resolution(streams, '2160p'), 'Bluray REMUX')) > 2 ? slice(quality(resolution(streams, '2160p'), 'Bluray REMUX'), 2) : []",
 		"enabled": true
 	},
